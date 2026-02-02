@@ -9,7 +9,7 @@ from database import get_db
 from models import Task
 
 
-app = FastAPI(title="ToDo List")
+app = FastAPI(title="ToDo List") # Создание объекта сервера
 
 
 @app.get("/tasks/", response_model=List[TaskResponse])
